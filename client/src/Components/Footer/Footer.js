@@ -41,6 +41,16 @@ const Footer = () => {
             <p style={{fontFamily:"Stylish"}}>Email: <a href='mailto:sundaravel.exe@gmail.com'>sundaravel.exe@gmail.com</a></p>
           </Col>
         </Row>
+        <Row>
+          <Col lg={12} className='text-center mt-4'>
+            <p style={{ fontFamily: 'Stylish' }}>
+              &copy; {new Date().getFullYear()} Sundaravel-K. All rights reserved.
+            </p>
+            <p style={{ fontFamily: 'Stylish' }}>
+              Developed by <a href='https://www.instagram.com/vel_snizaps_xurde/'target='_blank'rel="noreferrer">Sundaravel</a> using ReactJS &amp; Bootstrap with functionalities.
+            </p>
+          </Col>
+        </Row>
       </Container>
     </footer>
   )
