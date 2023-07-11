@@ -13,8 +13,8 @@ function App() {
     <div className="vh-100 overflow-visible">
       <Navbar/>
       <Hero/>
-      <Projects/>
       <Skills/>
+      <Projects/>
       <Footer/>
     </div>
   );

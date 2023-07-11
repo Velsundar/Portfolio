@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer style={{ backgroundColor: 'black', color: 'white' }} className='py-5'>
     <hr style={{width:'90%',height:'6px',marginLeft:'25px',backgroundColor:'whitesmoke'}}/>
-            <div><h1 style={{marginLeft:'45px'}}>Enquire now</h1></div>
+            <div><h1 style={{marginLeft:'45px'}}><u style={{fontFamily:"Stylish"}}>Enquire now</u></h1></div>
       <Container>
         <Row>
           <Col lg={6}>
@@ -35,10 +35,10 @@ const Footer = () => {
             </Form>
           </Col>
           <Col lg={6}>
-            <h3>Address</h3>
-            <p>302,Saravanampatti,Coimbatore</p>
-            <p>Phone:<a href='tel:+919786575916'> +91-9786575916</a></p>
-            <p>Email: <a href='mailto:sundaravel.exe@gmail.com'>sundaravel.exe@gmail.com</a></p>
+            <h3><u style={{fontFamily:"Stylish"}}>Address</u></h3>
+            <p style={{fontFamily:"Stylish"}}>302,Saravanampatti,Coimbatore</p>
+            <p style={{fontFamily:"Stylish"}}>Phone:<a href='tel:+919786575916'> +91-9786575916</a></p>
+            <p style={{fontFamily:"Stylish"}}>Email: <a href='mailto:sundaravel.exe@gmail.com'>sundaravel.exe@gmail.com</a></p>
           </Col>
         </Row>
       </Container>

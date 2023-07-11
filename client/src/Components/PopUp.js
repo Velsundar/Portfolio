@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
-// import * as Yup from 'yup';
-// import { Formik } from 'formik';
 
 
 const PopUp = ({show, handleClose}) => {
@@ -12,29 +10,6 @@ const PopUp = ({show, handleClose}) => {
     location:''
   });
 
-  // const handleSubmit= async(e)=>{
-  //   e.preventDefault();
-  //   try {
-  //     const response = await fetch('/api/send-email', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify(formData),
-  //     });
-  //     if (response.ok) {
-  //       // Email sent successfully
-  //       console.log('Email sent');
-  //     } else {
-  //       // Error sending email
-  //       console.log('Error sending email');
-  //     }
-  //   } catch (error) {
-  //     console.log('Error sending email:', error);
-  //   } 
-  //   console.log(formData);
-  //   handleClose();
-  // }
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };

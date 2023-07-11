@@ -11,7 +11,7 @@ const MyNavbar = () => {
     fontFamily:'Times New Roman'
   };
   return (
-    <Navbar bg="black" variant="dark" expand="lg" className='sticky-top'>
+    <Navbar bg="black" variant="dark" expand="lg" className='fixed-top'>
       <Navbar.Brand href="#home" className='logo-custom'>
         <img
           src={logo}

@@ -14,9 +14,9 @@ const Projects = () => {
         <Row>
           <Col>
             <h1 style={{ marginTop: '100px', color: 'white' }}>
-              <u>Projects</u>
+              <u style={{fontFamily:"stylish"}}>Projects</u>
             </h1>
-            <p style={{ color: 'white' }}>I have worked with the following technologies.</p>
+            <p style={{ color: 'white' }}>Take a look at some of my works.</p>
           </Col>
         </Row>
         <Row className='cards_main justify-content-center align-items-center'>
@@ -24,9 +24,9 @@ const Projects = () => {
             <Card style={{ backgroundColor: 'transparent', boxShadow: '0px 0px 19px 2px red', cursor: 'pointer' }} className='cards'>
               <Card.Img variant='top' src={zomatoProj} className='cardImage' />
               <Card.Body>
-                <Card.Title className='text-white'>Zomator Clone</Card.Title>
+                <Card.Title className='text-white' >Zomato Clone</Card.Title>
                 <Card.Title className='text-white'>
-                  <a href='#git' className='card-link'>Source Code</a>
+                  <a href='https://github.com/Velsundar/Zomato_Clone'target='_blank'rel="noreferrer" className='card-link'>Source Code</a>
                 </Card.Title>
               </Card.Body>
             </Card>
@@ -37,7 +37,7 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title className='text-white'>CRUD Operations</Card.Title>
                 <Card.Title className='text-white'>
-                  <a href='#git' className='card-link'>Source Code</a>
+                  <a href='https://github.com/Velsundar/CRUD_Operations'target='_blank'rel="noreferrer" className='card-link'>Source Code</a>
                 </Card.Title>
               </Card.Body>
             </Card>
@@ -48,7 +48,7 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title className='text-white'>TeleNet IT Consultant</Card.Title>
                 <Card.Title className='text-white'>
-                  <a href='#git' className='card-link'>Source Code</a>
+                  <a href='https://github.com/Velsundar/TeleNet-IT-Consultant-Page'target='_blank'rel="noreferrer" className='card-link'>Source Code</a>
                 </Card.Title>
               </Card.Body>
             </Card>

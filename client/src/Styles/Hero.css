@@ -9,28 +9,30 @@
     background-color: black;
     color: white;
     z-index:1;
-    /* overflow: hidden; */
 }
-.hero-image {
+/* .hero-image {
     position: relative;
-}
+    border: 2px solid greenyellow;
+    background-color: #1DA1F2;
+    width: 303px;
+    height: 405px;
+} */
 .profile-image-container {
     position: relative;
     
 }
-.profile-image {
+/* .profile-image {
     width: 300px;
     height: 400px;
     margin-right: 80px;
     border-bottom: 4px solid black;
     z-index:2;
-}
+} */
 .hero-background {
     position: absolute;
-    top: 10px;
+    top: 40px;
     right: 0;
     z-index: -1;
-    /* opacity: 0.3; */
 }
 .background-image {
     width: 600px;
@@ -85,7 +87,7 @@
 /* About me button ends */
 .btn{
     margin-top: 120px;
-    margin-left: 100px;
+    margin-left: 80px;
     border: none;
     box-shadow: 0 0 23px 1px whitesmoke;
 }
@@ -96,11 +98,10 @@
     position: fixed;
     width: 90px;
     top: 50%;
-    left: 0 ; /*Adjust the left positioning as needed */
+    left: 0 ; 
     transform: translateY(-50%);
     transition: all 0.3s linear;
-    /* box-shadow: 2px 2px 8px 0px rgba(158, 130, 130, 0.4); */
-    z-index: 3; /* Ensure icons are displayed above other elements */
+    z-index: 3; 
 }
 nav ul {
     margin-top: 0;
@@ -144,7 +145,6 @@ nav li a {
     font-size: xx-large;
     line-height: 45px;
     padding-left: 25%;
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.4); */
     transition: all 0.3s linear;
     text-decoration: none !important;
 }
@@ -175,4 +175,3 @@ ul li:hover a span {
     display: inline-block;
     font-size: 15px;
 }
-/* About Me Section */

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Container, Row, Col, Image,Button } from 'react-bootstrap';
-import velImage from '../../Assets/Portfolio_VEL.png';
+// import velImage from '../../Assets/Portfolio_VEL.png';
 import velSvg from '../../Assets/yellow_svg.svg'
 import '../../Styles/Hero.css'
+import "aos/dist/aos.css";
+import Aos from 'aos';
 import Resume from '../../Assets/SUNDARAVEL_K.pdf'
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
@@ -11,7 +13,10 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import PopUp from '../PopUp';
 
 const Hero = () => {
-    const [showPopup, setShowPopup] = useState(false);
+    useEffect(() => {
+        Aos.init();
+        Aos.refresh();
+      }, []);    const [showPopup, setShowPopup] = useState(false);
     const handleShowPopup = () => {
         setShowPopup(true);
       };
@@ -33,19 +38,19 @@ const Hero = () => {
         <Container id='home' >
             <Row>
                 <Col md={6} className='d-flex flex-column justify-content-centre'>
-                    <h1 className='hero-title' style={{fontFamily:"Stylish"}}>I am a Full Stack Web Developer</h1>
-                    <p className='hero-paragraph' style={{fontFamily:"Stylish"}}>
+                    <h1 data-aos="fade-right"data-aos-duration="2000" className='hero-title' style={{fontFamily:"Stylish",marginTop:'150px',marginLeft:'30px'}}>I am Sundaravel, I am a Full Stack Web Developer</h1>
+                    <p data-aos="fade-right"data-aos-duration="2000" className='hero-paragraph' style={{fontFamily:"Stylish",marginLeft:'50px'}}>
                         This is my official portfolio Website to showcase all my works related web development.
                     </p>
-                    <Button  variant="light" className='btn' onClick={handleShowPopup}>Hire Me</Button>
+                    <Button data-aos="fade-right"data-aos-duration="2000" variant="light" className='btn' onClick={handleShowPopup}>Hire Me</Button>
                 </Col>
                 <PopUp show={showPopup} handleClose={handleClosePopup} />
                 <Col md={6} className='d-flex justify-content-end align-items-center'>
-                <div  className="hero-image">
+                {/* <div  className="hero-image rounded-3">
                     <Image src={velImage} alt="Profile" className="profile-image rounded" />
-                </div>
+                </div> */}
                 <div className="hero-background d-none d-lg-block">
-                    <Image src={velSvg} alt="Background" className="background-image svgimage" />
+                    <Image data-aos="fade-down" data-aos-duration="2000" src={velSvg} alt="Background" className="background-image svgimage" />
                 </div>
                 </Col>
             </Row>
@@ -53,9 +58,9 @@ const Hero = () => {
         {/* Side Floating icons */}
         <nav className="floating-icons">
             <ul>
-                <li><a href="#Linkedin"><FaLinkedin /><span>Linkedin</span></a></li>
+                <li><a href="https://www.linkedin.com/in/vel-sundar/"><FaLinkedin /><span>Linkedin</span></a></li>
                 <li><a href="https://github.com/Velsundar"target='_blank'  rel="noreferrer"><FaGithub /><span>Github</span></a></li>
-                <li><a href="#mail"><RiMailSendFill /><span>Mail Me</span></a></li>
+                <li><a href="mailto:sundaravel.exe@gmail.com"><RiMailSendFill /><span>Mail Me</span></a></li>
                 <li><a href="#cv" onClick={handleDownloadCV}><BsFillPersonLinesFill /><span>Resume</span></a></li>
                 </ul>
         </nav>
@@ -72,15 +77,6 @@ const Hero = () => {
             </div>
             </Row>
         </Container>
-        {/* Projects sections */}
-        {/* <Container style={{marginTop:"100px"}}>
-            <Row>
-                <Col>
-                <h1><u>Projects</u></h1>
-                <p>Please Review a selection of my project works showcased here</p>
-                </Col>
-            </Row>
-        </Container> */}
     </div>
   );
 };
