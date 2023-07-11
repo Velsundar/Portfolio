@@ -1,0 +1,15 @@
+.cardImage{
+    height: 150px;
+    width: 100%;
+    
+}
+.card{
+    width: 250px;
+    transition: transform .4s;
+}
+.cards_main{
+    gap: 90px;
+}
+.cards:hover{
+    transform: scale(1.1);
+}
