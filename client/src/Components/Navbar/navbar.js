@@ -26,8 +26,8 @@ const MyNavbar = () => {
         <Nav className="ms-auto">
           <Nav.Link href="#home" style={linkStyles}>Home</Nav.Link>
           <Nav.Link href="#about" style={linkStyles}>About</Nav.Link>
-          <Nav.Link href="#projects" style={linkStyles}>Projects</Nav.Link>
           <Nav.Link href="#skills" style={linkStyles}>Skills</Nav.Link>
+          <Nav.Link href="#projects" style={linkStyles}>Projects</Nav.Link>
           <Nav.Link href="#contact" style={linkStyles}>Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>

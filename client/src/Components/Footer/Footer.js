@@ -4,7 +4,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: 'black', color: 'white' }} className='py-5'>
+    <footer style={{ backgroundColor: 'black', color: 'white' }} className='py-5' id='contact'>
     <hr style={{width:'90%',height:'6px',marginLeft:'25px',backgroundColor:'whitesmoke'}}/>
             <div><h1 style={{marginLeft:'45px'}}><u style={{fontFamily:"Stylish"}}>Enquire now</u></h1></div>
       <Container>
