@@ -58,7 +58,7 @@ const Projects = () => {
             <Card style={{ backgroundColor: 'transparent', boxShadow: '0px 0px 15px 4px white', cursor: 'pointer' }} className='cards'>
               <Card.Img variant='top' src={JWT_Auth} className='cardImage' />
               <Card.Body>
-                <Card.Title className='text-white'>Ongoing</Card.Title>
+                <Card.Title className='text-white'>JWT_Authentication</Card.Title>
                 <Card.Title className='text-white'>
                   <a href='https://github.com/Velsundar/Elansol_TEch_JWT_Auth_Token' className='card-link'>Source Code</a>
                 </Card.Title>
