@@ -5,6 +5,7 @@ import './Projects.css';
 import zomatoProj from '../Assets/Zomato_Project.png'
 import CRUDproj from '../Assets/CRUD_Proj.png';
 import Teleproj from '../Assets/TELENET_Proj.png';
+import JWT_Auth from '../Assets/JWT_Auth.png';
 import Cominsoon from '../Assets/Coming_Soon_image.jpg';
 
 const Projects = () => {
@@ -55,11 +56,11 @@ const Projects = () => {
           </Col>
           <Col xs={9} md={4} lg={2}>
             <Card style={{ backgroundColor: 'transparent', boxShadow: '0px 0px 15px 4px white', cursor: 'pointer' }} className='cards'>
-              <Card.Img variant='top' src={Cominsoon} className='cardImage' />
+              <Card.Img variant='top' src={JWT_Auth} className='cardImage' />
               <Card.Body>
                 <Card.Title className='text-white'>Ongoing</Card.Title>
                 <Card.Title className='text-white'>
-                  <a href='#git' className='card-link'>Source Code</a>
+                  <a href='https://github.com/Velsundar/Elansol_TEch_JWT_Auth_Token' className='card-link'>Source Code</a>
                 </Card.Title>
               </Card.Body>
             </Card>
