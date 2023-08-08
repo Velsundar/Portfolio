@@ -6,6 +6,7 @@ import zomatoProj from '../Assets/Zomato_Project.png'
 import CRUDproj from '../Assets/CRUD_Proj.png';
 import Teleproj from '../Assets/TELENET_Proj.png';
 import JWT_Auth from '../Assets/JWT_Auth.png';
+import Seat_allo from '../Assets/Seat_Allocation.png'
 import Cominsoon from '../Assets/Coming_Soon_image.jpg';
 
 const Projects = () => {
@@ -60,18 +61,21 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title className='text-white'>JWT_Authentication</Card.Title>
                 <Card.Title className='text-white'>
-                  <a href='https://github.com/Velsundar/Elansol_TEch_JWT_Auth_Token' className='card-link'>Source Code</a>
+                  <a href='https://github.com/Velsundar/Elansol_TEch_JWT_Auth_Token'target='_blank'rel="noreferrer" className='card-link'>Source Code</a>
                 </Card.Title>
               </Card.Body>
             </Card>
           </Col>
           <Col xs={9} md={4} lg={2}>
-            <Card style={{ backgroundColor: 'transparent', boxShadow: '0px 0px 15px 4px white', cursor: 'pointer' }} className='cards'>
-              <Card.Img variant='top' src={Cominsoon} className='cardImage' />
+            <Card style={{ backgroundColor: 'transparent', boxShadow: '0px 0px 15px 4px blue', cursor: 'pointer' }} className='cards'>
+              <Card.Img variant='top' src={Seat_allo} className='cardImage' />
               <Card.Body>
-                <Card.Title className='text-white'>Ongoing</Card.Title>
+                <Card.Title className='text-white'>Bus Seat Booking</Card.Title>
                 <Card.Title className='text-white'>
-                  <a href='#git' className='card-link'>Source Code</a>
+                  <a href='https://github.com/Velsundar/Seat_Booking_bus'target='_blank'rel="noreferrer" className='card-link'>Source Code</a>
+                </Card.Title>
+                <Card.Title className='text-white'>
+                  <a href='https://seat-allocation.netlify.app/'target='_blank'rel="noreferrer" className='card-link'>Live Demo</a>
                 </Card.Title>
               </Card.Body>
             </Card>
